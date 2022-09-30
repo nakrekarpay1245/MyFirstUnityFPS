@@ -16,6 +16,8 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private float shootTime = 0.5f;
     private float nextShootTime = 0.5f;
+    [SerializeField]
+    private DynamicCrosshair dynamicCrosshair;
 
     [Header("References")]
     [SerializeField]
@@ -35,6 +37,10 @@ public class Weapon : MonoBehaviour
 
     [SerializeField]
     private AudioSource weaponAudioSource;
+    [SerializeField]
+    private AudioClip weaponShootClip;
+    [SerializeField]
+    private AudioClip weaponMagazineClip;
 
     private bool isReloading;
     private void Awake()
@@ -55,7 +61,7 @@ public class Weapon : MonoBehaviour
 
         if (!isReloading && (Input.GetKeyDown(KeyCode.R) || bulletCount <= 0))
         {
-            Debug.Log("Reload Update");
+            // Debug.Log("Reload Update");
             isReloading = true;
             StartCoroutine(ReloadRoutine());
         }
@@ -75,11 +81,20 @@ public class Weapon : MonoBehaviour
                     if (Time.time > nextShootTime)
                     {
                         nextShootTime = Time.time + shootTime;
-                        muzzleFlash.Play();
+
                         weaponAnimator.CrossFade("Shoot", 0.15f);
+
+                        dynamicCrosshair.RecoilCrosshair();
+
+                        muzzleFlash.Play();
+
+                        weaponAudioSource.clip = weaponShootClip;
+                        weaponAudioSource.pitch = Random.Range(0.95f, 1.05f);
                         weaponAudioSource.Play();
+
                         Destroy(Instantiate(hitImpactPrefab, raycastHit.point,
                             Quaternion.LookRotation(raycastHit.normal)), 5);
+
                         DecreaseBulletCount();
                     }
                 }
@@ -94,15 +109,28 @@ public class Weapon : MonoBehaviour
         bullets[bulletCount].gameObject.SetActive(false);
     }
 
+    private void IncreaseBulletCount()
+    {
+        bullets[bulletCount].gameObject.SetActive(true);
+        bulletCount++;
+    }
+
     private IEnumerator ReloadRoutine()
     {
+        // Debug.Log("Reload Routine");
+        isReloading = true;
+        yield return new WaitForSeconds(0.85f);
+
+        weaponAnimator.CrossFade("Reload", 0.15f);
+        yield return new WaitForSeconds(0.15f);
+
         while (bulletCount < totalBulletCount)
         {
-            Debug.Log("Reload Routine: " + bulletCount);
-            yield return new WaitForSeconds(1);
-            weaponAnimator.CrossFade("Reload", 0.15f);
-            bullets[bulletCount].gameObject.SetActive(true);
-            bulletCount++;
+            IncreaseBulletCount();
+            weaponAudioSource.clip = weaponMagazineClip;
+            weaponAudioSource.pitch = Random.Range(1.15f, 1.25f);
+            weaponAudioSource.Play();
+            yield return new WaitForSeconds(0.2f);
         }
 
         isReloading = false;

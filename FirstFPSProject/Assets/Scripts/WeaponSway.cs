@@ -6,9 +6,9 @@ public class WeaponSway : MonoBehaviour
 {
     [Header("SWAY")]
     [SerializeField]
-    private float smoothness = 5;
+    private float smoothness = 8;
     [SerializeField]
-    private float swayMultiplier = 3;
+    private float swayMultiplier = 2;
 
     private float mouseX;
     private float mouseY;

@@ -146,12 +146,12 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6144800266844679563, guid: 199512e679bce08419962bb25efddfdd, type: 3}
-  - {fileID: -1125811747517359881, guid: 199512e679bce08419962bb25efddfdd, type: 3}
-  - {fileID: -5436701735083832694, guid: 199512e679bce08419962bb25efddfdd, type: 3}
-  - {fileID: 2178931816046846675, guid: 199512e679bce08419962bb25efddfdd, type: 3}
-  - {fileID: -6559875636125563095, guid: 199512e679bce08419962bb25efddfdd, type: 3}
-  - {fileID: 6016117741575528259, guid: 199512e679bce08419962bb25efddfdd, type: 3}
+  - {fileID: 2100000, guid: 9631074889edf5d4e91864655830ca26, type: 2}
+  - {fileID: 2100000, guid: 39f41bedc9c06cd4daf281f364a895e0, type: 2}
+  - {fileID: 2100000, guid: 304be6de9c1166444a28930c17344a3f, type: 2}
+  - {fileID: 2100000, guid: 39f41bedc9c06cd4daf281f364a895e0, type: 2}
+  - {fileID: 2100000, guid: 304be6de9c1166444a28930c17344a3f, type: 2}
+  - {fileID: 2100000, guid: d391a4ee3972d5241b60ae00470b338e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2372910099268698154}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -557,12 +557,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   shootTime: 1
+  dynamicCrosshair: {fileID: 0}
   camera: {fileID: 0}
   muzzle: {fileID: 760008838}
   muzzleFlash: {fileID: 1953919597951059303}
-  hitImpactPrefab: {fileID: 5159911268992773087, guid: 0bdd613af5617ab49bab054624cbbe06, type: 3}
+  hitImpactPrefab: {fileID: 5159911268992773087, guid: bc7935121996446469105518734aff80, type: 3}
   weaponAnimator: {fileID: 6720186958274598219}
   weaponAudioSource: {fileID: 6720186958274598217}
+  weaponShootClip: {fileID: 8300000, guid: 605be5b596e1f054195b4e578ca559af, type: 3}
+  weaponMagazineClip: {fileID: 8300000, guid: a9723a90943967245a39c49c547195b6, type: 3}
 --- !u!82 &6720186958274598217
 AudioSource:
   m_ObjectHideFlags: 0

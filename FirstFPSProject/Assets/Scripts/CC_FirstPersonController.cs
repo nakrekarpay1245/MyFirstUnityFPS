@@ -16,6 +16,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool canJump = true;
     [SerializeField]
     private bool canCrouch = true;
+    [SerializeField]
+    private bool canUseHeadbob = true;
 
     [Header("Control Inputs")]
     [SerializeField]
@@ -48,6 +50,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private float jumpForce = 8;
     [SerializeField]
     private float gravity = 30;
+    [SerializeField]
+    private DynamicCrosshair dynamicCrosshair;
 
     [Header("Crouch Paremeters")]
     [SerializeField]
@@ -63,6 +67,21 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool isCoruching;
     private bool duringCrouchAnimation;
 
+    [Header("Headbob Paremeters")]
+    [SerializeField]
+    private float walkBobSpeed = 14;
+    [SerializeField]
+    private float walkBobAmount = 0.05f;
+    [SerializeField]
+    private float sprintBobSpeed = 18;
+    [SerializeField]
+    private float sprintBobAmount = 0.1f;
+    [SerializeField]
+    private float crouchBobSpeed = 8;
+    [SerializeField]
+    private float crouchBobAmount = 0.025f;
+    private float defaultYPosition = 0;
+    private float timer;
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -75,6 +94,7 @@ public class CC_FirstPersonController : MonoBehaviour
     {
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
+        defaultYPosition = playerCamera.transform.localPosition.y;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -94,6 +114,11 @@ public class CC_FirstPersonController : MonoBehaviour
             if (canJump)
             {
                 HandleCrouch();
+            }
+
+            if (canUseHeadbob)
+            {
+                HandleHeadbob();
             }
 
             ApplyFinalMovements();
@@ -127,6 +152,7 @@ public class CC_FirstPersonController : MonoBehaviour
         if (ShouldJump)
         {
             moveDirection.y = jumpForce;
+            dynamicCrosshair.RecoilCrosshair();
         }
     }
 
@@ -136,6 +162,25 @@ public class CC_FirstPersonController : MonoBehaviour
         if (ShouldCrouch)
         {
             StartCoroutine(CrouchStand());
+        }
+    }
+
+    private void HandleHeadbob()
+    {
+        if (!characterController.isGrounded)
+        {
+            return;
+        }
+
+        if(Mathf.Abs(moveDirection.x)>0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
+        {
+            timer += Time.deltaTime * (isCoruching ? crouchBobSpeed : IsSprinting ? sprintBobSpeed : walkBobSpeed);
+            
+            playerCamera.transform.localPosition = new Vector3(
+                playerCamera.transform.localPosition.x,
+                defaultYPosition + Mathf.Sin(timer) * (isCoruching ? crouchBobAmount : IsSprinting ? sprintBobAmount : walkBobAmount),
+                playerCamera.transform.localPosition.z
+            );
         }
     }
 
