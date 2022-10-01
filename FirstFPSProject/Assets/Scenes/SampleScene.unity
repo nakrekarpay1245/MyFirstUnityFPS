@@ -1120,6 +1120,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6720186958274598218, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
+      propertyPath: hitImpactPrefab
+      value: 
+      objectReference: {fileID: 5159911268992773087, guid: e0765e14106e8af43b8f6b6797e7311f, type: 3}
+    - target: {fileID: 6720186958274598218, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
       propertyPath: dynamicCrosshair
       value: 
       objectReference: {fileID: 1455384167}

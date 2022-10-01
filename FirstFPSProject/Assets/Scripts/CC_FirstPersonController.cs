@@ -18,6 +18,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool canCrouch = true;
     [SerializeField]
     private bool canUseHeadbob = true;
+    [SerializeField]
+    private bool willSlideOnSlopes = true;
 
     [Header("Control Inputs")]
     [SerializeField]
@@ -34,6 +36,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private float sprintSpeed = 7;
     [SerializeField]
     private float crouchSpeed = 1.5f;
+    [SerializeField]
+    private float slopeSpeed = 8;
 
     [Header("Look Paremeters")]
     [SerializeField, Range(1, 10)]
@@ -82,6 +86,25 @@ public class CC_FirstPersonController : MonoBehaviour
     private float crouchBobAmount = 0.025f;
     private float defaultYPosition = 0;
     private float timer;
+
+    // SLIDING PARAMETERS
+    private Vector3 hitPointNormal;
+
+    private bool IsSliding
+    {
+        get
+        {
+            if(characterController.isGrounded && Physics.Raycast(transform.position, Vector3.down, out RaycastHit slopeHit, 2))
+            {
+                hitPointNormal = slopeHit.normal;
+                return Vector3.Angle(hitPointNormal, Vector3.up) > characterController.slopeLimit;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -190,6 +213,13 @@ public class CC_FirstPersonController : MonoBehaviour
         {
             moveDirection.y -= gravity * Time.deltaTime;
         }
+
+        if(willSlideOnSlopes && IsSliding)
+        {
+            moveDirection += new Vector3(hitPointNormal.x, -hitPointNormal.y, hitPointNormal.z) * slopeSpeed;
+
+        }
+
         characterController.Move(moveDirection * Time.deltaTime);
     }
 
