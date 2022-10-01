@@ -443,11 +443,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 767084594876468502, guid: 3748092c34fd4784386a7f3b17bb1cc4, type: 3}
   m_PrefabInstance: {fileID: 767084593087969144}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1531705527 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6899102506651268151, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-  m_PrefabInstance: {fileID: 6899102507568306499}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1590135087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,46 +1078,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: maxX
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: maxY
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: minX
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: minY
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: recX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: recY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 1531705527}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: smoothness
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 572252526, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: swayMultiplier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6720186958274598218, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: hitImpactPrefab
-      value: 
-      objectReference: {fileID: 5159911268992773087, guid: e0765e14106e8af43b8f6b6797e7311f, type: 3}
     - target: {fileID: 6720186958274598218, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
       propertyPath: dynamicCrosshair
       value: 
@@ -1201,10 +1156,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6899102507363625752, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899102507363625754, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
