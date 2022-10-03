@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - Enemy
+  - Footsteps/Grass
+  - Footsteps/Wood
+  - Footsteps/Sand
   layers:
   - Default
   - TransparentFX

@@ -26,6 +26,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool canZoom = true;
     [SerializeField]
     private bool canInteract = true;
+    [SerializeField]
+    private bool useFootsteps = true;
 
     [Header("Control Inputs")]
     [SerializeField]
@@ -105,6 +107,25 @@ public class CC_FirstPersonController : MonoBehaviour
     private float defaultFOV = 60;
     private Coroutine zoomRoutine;
 
+    [Header("Footstep Paremeters")]
+    [SerializeField]
+    private float baseStepSpeed = 0.5f;
+    [SerializeField]
+    private float crouchStepMultiplier = 1.5f;
+    [SerializeField]
+    private float sprintStepMultiplier = 0.6f;
+    [SerializeField]
+    private AudioSource footStepAudioSource;
+    [SerializeField]
+    private AudioClip[] woodClips;
+    [SerializeField]
+    private AudioClip[] sandClips;
+    [SerializeField]
+    private AudioClip[] grassClips;
+    private float footStepTimer;
+    private float GetCurrentOffset => isCoruching ? baseStepSpeed * crouchStepMultiplier : IsSprinting ? baseStepSpeed * sprintStepMultiplier : baseStepSpeed;
+
+
     // SLIDING PARAMETERS
     private Vector3 hitPointNormal;
 
@@ -175,6 +196,11 @@ public class CC_FirstPersonController : MonoBehaviour
             if (canZoom)
             {
                 HandleZoom();
+            }
+
+            if (useFootsteps)
+            {
+                HandleFootStep();
             }
 
             if (canInteract)
@@ -297,6 +323,45 @@ public class CC_FirstPersonController : MonoBehaviour
                 defaultYPosition + Mathf.Sin(timer) * (isCoruching ? crouchBobAmount : IsSprinting ? sprintBobAmount : walkBobAmount),
                 playerCamera.transform.localPosition.z
             );
+        }
+    }
+
+    private void HandleFootStep()
+    {
+        if (!characterController.isGrounded)
+        {
+            return;
+        }
+        if (currentInput == Vector2.zero)
+        {
+            return;
+        }
+
+        footStepTimer -= Time.deltaTime;
+
+        if (footStepTimer <= 0)
+        {
+            if (Physics.Raycast(playerCamera.transform.position, Vector3.down, out RaycastHit hit, 5))
+            {
+                Debug.Log(hit.collider.tag);
+                switch (hit.collider.tag)
+                {
+                    case "Footsteps/Wood":
+                        footStepAudioSource.PlayOneShot(woodClips[Random.Range(0, woodClips.Length)]);
+                        break;
+                    case "Footsteps/Sand":
+                        footStepAudioSource.PlayOneShot(sandClips[Random.Range(0, sandClips.Length)]);
+                        break;
+                    case "Footsteps/Grass":
+                        footStepAudioSource.PlayOneShot(grassClips[Random.Range(0, grassClips.Length)]);
+                        break;
+                    default:
+                        footStepAudioSource.PlayOneShot(sandClips[Random.Range(0, sandClips.Length)]);
+                        break;
+                }
+            }
+
+            footStepTimer = GetCurrentOffset;
         }
     }
 
