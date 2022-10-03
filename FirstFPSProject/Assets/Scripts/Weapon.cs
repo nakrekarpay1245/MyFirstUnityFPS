@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Weapon : MonoBehaviour
 {
     [Header("Magazine")]
     [SerializeField]
-    private int totalBulletCount = 6;
-    private int bulletCount = 6;
+    private int totalBulletCount = 120;
+    [SerializeField]
+    private TextMeshProUGUI totalBulletCountText;
+    [SerializeField]
+    private int magazineBulletCount = 6;
+    private int bulletCountInMagazine = 6;
+
     [SerializeField]
     private List<Image> bullets;
 
@@ -49,17 +55,18 @@ public class Weapon : MonoBehaviour
         muzzleFlash = GetComponentInChildren<ParticleSystem>();
         weaponAnimator = GetComponentInChildren<Animator>();
         weaponAudioSource = GetComponentInChildren<AudioSource>();
-        bulletCount = totalBulletCount;
+        bulletCountInMagazine = magazineBulletCount;
+        totalBulletCountText.text = totalBulletCount.ToString();
     }
 
     void Update()
     {
-        if (bulletCount > 0 && !isReloading)
+        if (bulletCountInMagazine > 0 && !isReloading)
         {
             Shoot();
         }
 
-        if (!isReloading && (Input.GetKeyDown(KeyCode.R) || bulletCount <= 0))
+        if (!isReloading && (Input.GetKeyDown(KeyCode.R) || bulletCountInMagazine <= 0))
         {
             // Debug.Log("Reload Update");
             isReloading = true;
@@ -105,14 +112,16 @@ public class Weapon : MonoBehaviour
 
     private void DecreaseBulletCount()
     {
-        bulletCount--;
-        bullets[bulletCount].gameObject.SetActive(false);
+        bulletCountInMagazine--;
+        bullets[bulletCountInMagazine].gameObject.SetActive(false);
     }
 
     private void IncreaseBulletCount()
     {
-        bullets[bulletCount].gameObject.SetActive(true);
-        bulletCount++;
+        bullets[bulletCountInMagazine].gameObject.SetActive(true);
+        bulletCountInMagazine++;
+        totalBulletCount--;
+        totalBulletCountText.text = totalBulletCount.ToString();
     }
 
     private IEnumerator ReloadRoutine()
@@ -124,7 +133,7 @@ public class Weapon : MonoBehaviour
         weaponAnimator.CrossFade("Reload", 0.15f);
         yield return new WaitForSeconds(0.15f);
 
-        while (bulletCount < totalBulletCount)
+        while (bulletCountInMagazine < magazineBulletCount)
         {
             IncreaseBulletCount();
             weaponAudioSource.clip = weaponMagazineClip;
