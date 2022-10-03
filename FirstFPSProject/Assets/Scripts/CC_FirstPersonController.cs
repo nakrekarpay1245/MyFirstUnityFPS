@@ -9,6 +9,8 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool ShouldCrouch => characterController.isGrounded && !duringCrouchAnimation &&
     Input.GetKeyDown(crouchKey);
 
+    [Header("ERKAN YAPRAK CHARACTER CONTROLLER - V - 0.1")]
+
     [Header("Functional Options")]
     [SerializeField]
     private bool canSprint = true;
@@ -20,6 +22,10 @@ public class CC_FirstPersonController : MonoBehaviour
     private bool canUseHeadbob = true;
     [SerializeField]
     private bool willSlideOnSlopes = true;
+    [SerializeField]
+    private bool canZoom = true;
+    [SerializeField]
+    private bool canInteract = true;
 
     [Header("Control Inputs")]
     [SerializeField]
@@ -28,6 +34,10 @@ public class CC_FirstPersonController : MonoBehaviour
     private KeyCode jumpKey = KeyCode.Space;
     [SerializeField]
     private KeyCode crouchKey = KeyCode.LeftControl;
+    [SerializeField]
+    private KeyCode zoomKey = KeyCode.Mouse1;
+    [SerializeField]
+    private KeyCode interactKey = KeyCode.E;
 
     [Header("Movement Paremeters")]
     [SerializeField]
@@ -87,6 +97,14 @@ public class CC_FirstPersonController : MonoBehaviour
     private float defaultYPosition = 0;
     private float timer;
 
+    [Header("Zoom Paremeters")]
+    [SerializeField]
+    private float timeToZoom = 0.3f;
+    [SerializeField]
+    private float zoomFOV = 30;
+    private float defaultFOV = 60;
+    private Coroutine zoomRoutine;
+
     // SLIDING PARAMETERS
     private Vector3 hitPointNormal;
 
@@ -94,7 +112,7 @@ public class CC_FirstPersonController : MonoBehaviour
     {
         get
         {
-            if(characterController.isGrounded && Physics.Raycast(transform.position, Vector3.down, out RaycastHit slopeHit, 2))
+            if (characterController.isGrounded && Physics.Raycast(transform.position, Vector3.down, out RaycastHit slopeHit, 2))
             {
                 hitPointNormal = slopeHit.normal;
                 return Vector3.Angle(hitPointNormal, Vector3.up) > characterController.slopeLimit;
@@ -105,6 +123,15 @@ public class CC_FirstPersonController : MonoBehaviour
             }
         }
     }
+
+    [Header("Interaction Paremeters")]
+    [SerializeField]
+    private Vector3 interactionRayPoint = new Vector3(0.5f, 0.5f, 0);
+    [SerializeField]
+    private float interactionDistance = 3;
+    [SerializeField]
+    private LayerMask interactionLayer = 9;
+    private Interactable currentInteractable;
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -118,6 +145,7 @@ public class CC_FirstPersonController : MonoBehaviour
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultYPosition = playerCamera.transform.localPosition.y;
+        defaultFOV = playerCamera.fieldOfView;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -144,7 +172,72 @@ public class CC_FirstPersonController : MonoBehaviour
                 HandleHeadbob();
             }
 
+            if (canZoom)
+            {
+                HandleZoom();
+            }
+
+            if (canInteract)
+            {
+                HandleInteractionCheck();
+                HandleInteractionInput();
+            }
+
             ApplyFinalMovements();
+        }
+    }
+
+    private void HandleZoom()
+    {
+        if (Input.GetKeyDown(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(true));
+        }
+
+        if (Input.GetKeyUp(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(false));
+        }
+    }
+
+    private void HandleInteractionCheck()
+    {
+        if (Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance))
+        {
+            if (hit.collider.gameObject.layer == 9 && !currentInteractable)
+            {
+                hit.collider.TryGetComponent(out currentInteractable);
+
+                if (currentInteractable)
+                {
+                    currentInteractable.OnFocus();
+                }
+            }
+        }
+        else if (currentInteractable)
+        {
+            currentInteractable.OnLoseFocus();
+            currentInteractable = null;
+        }
+    }
+
+    private void HandleInteractionInput()
+    {
+        if (Input.GetKeyDown(interactKey) && currentInteractable && Physics.Raycast(playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance, interactionLayer))
+        {
+            currentInteractable.OnInteract();
         }
     }
 
@@ -195,10 +288,10 @@ public class CC_FirstPersonController : MonoBehaviour
             return;
         }
 
-        if(Mathf.Abs(moveDirection.x)>0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
+        if (Mathf.Abs(moveDirection.x) > 0.1f || Mathf.Abs(moveDirection.z) > 0.1f)
         {
             timer += Time.deltaTime * (isCoruching ? crouchBobSpeed : IsSprinting ? sprintBobSpeed : walkBobSpeed);
-            
+
             playerCamera.transform.localPosition = new Vector3(
                 playerCamera.transform.localPosition.x,
                 defaultYPosition + Mathf.Sin(timer) * (isCoruching ? crouchBobAmount : IsSprinting ? sprintBobAmount : walkBobAmount),
@@ -214,7 +307,7 @@ public class CC_FirstPersonController : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        if(willSlideOnSlopes && IsSliding)
+        if (willSlideOnSlopes && IsSliding)
         {
             moveDirection += new Vector3(hitPointNormal.x, -hitPointNormal.y, hitPointNormal.z) * slopeSpeed;
 
@@ -254,5 +347,21 @@ public class CC_FirstPersonController : MonoBehaviour
         isCoruching = !isCoruching;
 
         duringCrouchAnimation = false;
+    }
+    private IEnumerator ToggleZoom(bool isEnter)
+    {
+        float targetFOV = isEnter ? zoomFOV : defaultFOV;
+        float startingFOV = playerCamera.fieldOfView;
+        float timeElapsed = 0;
+
+        while (timeElapsed < timeToZoom)
+        {
+            playerCamera.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapsed / timeToZoom);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        playerCamera.fieldOfView = targetFOV;
+        zoomRoutine = null;
     }
 }

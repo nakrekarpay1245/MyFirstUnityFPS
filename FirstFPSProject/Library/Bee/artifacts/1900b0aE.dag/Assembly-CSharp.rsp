@@ -356,6 +356,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CC_FirstPersonController.cs"
 "Assets/Scripts/DynamicCrosshair.cs"
+"Assets/Scripts/Interactable.cs"
+"Assets/Scripts/TestInteractable.cs"
 "Assets/Scripts/Weapon.cs"
 "Assets/Scripts/WeaponSway.cs"
 -langversion:9.0
