@@ -9,6 +9,8 @@ TagManager:
   - Footsteps/Grass
   - Footsteps/Wood
   - Footsteps/Sand
+  - Interactable/AmmoBox
+  - Interactable/HealthBag
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Enemy
   - 
   - Interactable
-  - 
+  - AmmoBox
   - 
   - 
   - 
