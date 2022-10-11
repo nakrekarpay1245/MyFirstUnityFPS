@@ -14,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     [Header("Component Deðiþkenleri")]
     public StateManager stateManager;
     public Animator animator;
+    public NavMeshAgent navMeshAgent;
 
     [Header("State Deðiþkenleri")]
     public EnemyIdleState idleState;
@@ -30,7 +31,7 @@ public class EnemyAI : MonoBehaviour
     private void Awake()
     {
         ComponentAttach();
-        StateDataVariablesAttach();
+        SetStateDataVariables();
         CreateStates();
     }
 
@@ -43,11 +44,13 @@ public class EnemyAI : MonoBehaviour
     {
         ownTransform = transform;
         stateManager = GetComponent<StateManager>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
     }
 
-    private void StateDataVariablesAttach()
+    private void SetStateDataVariables()
     {
-        idleStateData.attackRadius = attackStateData.attackRadius;
+        idleStateData.chaseRadius = chaseStateData.chaseRadius;
     }
     #endregion
 
@@ -109,6 +112,12 @@ public class EnemyAI : MonoBehaviour
     #region Editör Kodlarý
     private void OnDrawGizmos()
     {
+        Gizmos.color = new Color(0, 255, 0, 0.5f);
+        if (idleStateData)
+        {
+            Gizmos.DrawWireSphere(transform.position, idleStateData.chaseRadius);
+        }
+
         Gizmos.color = new Color(255, 0, 0, 0.5f);
         if (attackStateData)
         {

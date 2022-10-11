@@ -1,36 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyIdleState : IState
 {
     // Hareket
-    public float rotateSpeed;
+    private float moveSpeed;
+    private float rotateSpeed;
 
     // Component
-    public Animator animator;
-
-    public EnemyAI enemyAI;
+    private Animator animator;
+    private NavMeshAgent navMeshAgent;
+    private EnemyAI enemyAI;
 
     // Konum
-    public Transform ownTransform;
+    private Transform ownTransform;
+    private Transform playerTransform;
 
     // Algýlama
-    public float attackRadius;
-    public LayerMask soldierLayer;
-
-    private GameObject nearestSoldier;
-
+    private float chaseRadius;
     public EnemyIdleState(IdleStateData idleStateData, EnemyAI enemyAI)
     {
+        this.moveSpeed = idleStateData.moveSpeed;
         this.rotateSpeed = idleStateData.rotateSpeed;
+        this.chaseRadius = idleStateData.chaseRadius;
         this.enemyAI = enemyAI;
-        this.attackRadius = idleStateData.attackRadius;
+        this.navMeshAgent = enemyAI.navMeshAgent;
+        this.animator = enemyAI.animator;
+        this.ownTransform = enemyAI.ownTransform;
+        this.playerTransform = enemyAI.playerTransform;
     }
 
     public void OnStateEnter()
     {
         Debug.Log(enemyAI.gameObject.name + " Enemy Enter Idle State");
+        SetStateSpeed();
+        SetAnimatorVariable();
     }
 
     public void OnStateExit()
@@ -41,5 +45,24 @@ public class EnemyIdleState : IState
     public void OnStateUpdate()
     {
         Debug.Log(enemyAI.gameObject.name + " Enemy Update Idle State");
+        CheckPlayerDistance();
+    }
+
+    private void SetStateSpeed()
+    {
+        navMeshAgent.speed = moveSpeed;
+    }
+
+    private void SetAnimatorVariable()
+    {
+        animator.SetBool("isWalk", false);
+    }
+
+    private void CheckPlayerDistance()
+    {
+        if (Vector3.Distance(ownTransform.position, playerTransform.position) < chaseRadius)
+        {
+            enemyAI.Chase();
+        }
     }
 }

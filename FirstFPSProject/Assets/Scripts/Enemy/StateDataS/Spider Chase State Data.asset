@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15fbba18e2b72e42ba773fab07eae18, type: 3}
   m_Name: Spider Chase State Data
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.75
   rotateSpeed: 120
   attackRadius: 3
+  chaseRadius: 10

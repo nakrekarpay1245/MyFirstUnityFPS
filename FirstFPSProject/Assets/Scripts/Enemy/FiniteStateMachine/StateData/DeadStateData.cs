@@ -8,5 +8,5 @@ using UnityEngine.AI;
 public class DeadStateData : ScriptableObject
 {
     [Header("Hareket Deðiþkenleri")]
-    public float speed;
+    public float moveSpeed = 0;
 }

@@ -12,4 +12,5 @@ public class ChaseStateData : ScriptableObject
 
     [Header("Saldýrý Deðiþkenleri")]
     public float attackRadius;
+    public float chaseRadius;
 }

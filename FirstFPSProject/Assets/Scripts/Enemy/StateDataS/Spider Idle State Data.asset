@@ -15,4 +15,4 @@ MonoBehaviour:
   moveSpeed: 0
   rotateSpeed: 120
   waitTime: 1
-  attackRadius: 3
+  chaseRadius: 3

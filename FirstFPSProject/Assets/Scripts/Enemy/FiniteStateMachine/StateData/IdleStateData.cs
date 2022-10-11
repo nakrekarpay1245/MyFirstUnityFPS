@@ -13,7 +13,6 @@ public class IdleStateData : ScriptableObject
     [Header("Süre Deðiþkenleri")]
     public float waitTime;
 
-    [Header("Saldýrý Deðiþkenleri")]
-    [HideInInspector]
-    public float attackRadius;
+    [Header("Takip/Kovalama Deðiþkenleri")]
+    public float chaseRadius;
 }

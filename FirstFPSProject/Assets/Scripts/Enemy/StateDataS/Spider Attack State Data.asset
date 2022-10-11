@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e22f030b0ed1144f9c33c90df1d3029, type: 3}
   m_Name: Spider Attack State Data
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0
   rotateSpeed: 360
   attackRadius: 3
-  attackTime: 1
+  attackTime: 3

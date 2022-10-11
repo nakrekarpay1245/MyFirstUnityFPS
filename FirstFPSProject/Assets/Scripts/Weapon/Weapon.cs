@@ -15,8 +15,11 @@ public class Weapon : MonoBehaviour
     private int magazineBulletCount = 6;
     private int bulletCountInMagazine = 6;
 
+    [Header("Bullet")]
     [SerializeField]
     private List<Image> bullets;
+    [SerializeField]
+    private float damage = 5;
 
     [Header("Shoot")]
     [SerializeField]
@@ -88,6 +91,10 @@ public class Weapon : MonoBehaviour
                     if (Time.time > nextShootTime)
                     {
                         nextShootTime = Time.time + shootTime;
+
+                        EnemyHealth enemyHealth = raycastHit.collider.GetComponentInParent<EnemyHealth>();
+
+                        enemyHealth?.TakeDamage(damage);
 
                         weaponAnimator.CrossFade("Shoot", 0.15f);
 

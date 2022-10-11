@@ -1,39 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAttackState : IState
 {
     // Hareket
-    public float rotateSpeed;
+    private float moveSpeed;
+    private float rotateSpeed;
 
     // Component
-    public Animator animator;
-
-    public EnemyAI enemyAI;
+    private Animator animator;
+    private NavMeshAgent navMeshAgent;
+    private EnemyAI enemyAI;
 
     // Konum
-    public Transform ownTransform;
+    private Transform ownTransform;
+    private Transform playerTransform;
 
     // Algýlama
+    private float chaseRadius;
     public float attackRadius;
 
     // Saldýrý
-    public float attackTime;
-    public float nextAttackTime;
+    private float attackTime;
+    private float timer;
 
     public EnemyAttackState(AttackStateData attackStateData, EnemyAI enemyAI)
     {
         this.rotateSpeed = attackStateData.rotateSpeed;
-        this.animator = enemyAI.animator;
+        this.moveSpeed = attackStateData.moveSpeed;
         this.enemyAI = enemyAI;
+        this.animator = enemyAI.animator;
+        this.navMeshAgent = enemyAI.navMeshAgent;
         this.ownTransform = enemyAI.ownTransform;
+        this.playerTransform = enemyAI.playerTransform;
         this.attackRadius = attackStateData.attackRadius;
         this.attackTime = attackStateData.attackTime;
     }
     public void OnStateEnter()
     {
         Debug.Log("Enter Attack State");
+        timer = 0;
+        SetStateSpeed();
+        SetAnimatorVariable();
     }
 
     public void OnStateExit()
@@ -43,6 +51,36 @@ public class EnemyAttackState : IState
 
     public void OnStateUpdate()
     {
-        Debug.Log("Update Attack State");
+        Debug.Log("Attack State Update");
+        //CheckPlayerDistance();
+        AttackToIdleWithTime();
+    }
+
+    private void SetStateSpeed()
+    {
+        navMeshAgent.speed = moveSpeed;
+    }
+
+    private void SetAnimatorVariable()
+    {
+        animator.CrossFade("Attack", 0.2f);
+    }
+
+    //private void CheckPlayerDistance()
+    //{
+    //    if (Vector3.Distance(ownTransform.position, playerTransform.position) > chaseRadius)
+    //    {
+    //        enemyAI.Idle();
+    //    }
+    //}
+
+    private void AttackToIdleWithTime()
+    {
+        timer += Time.deltaTime;
+        Debug.Log("T: " + timer + " AT: " + attackTime);
+        if (timer > attackTime)
+        {
+            enemyAI.Idle();
+        }
     }
 }
