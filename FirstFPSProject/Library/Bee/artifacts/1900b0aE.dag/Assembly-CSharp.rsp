@@ -357,6 +357,7 @@
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/MouseCamLook.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/PlayerMovement.cs"
 "Assets/BrokenVector/LowPolyDungeon/Demo Scenes/ScreenshotMaker.cs"
+"Assets/Scripts/Enemy/AttackTest.cs"
 "Assets/Scripts/Enemy/DamageTest.cs"
 "Assets/Scripts/Enemy/EnemyHealth.cs"
 "Assets/Scripts/Enemy/FiniteStateMachine/Base/EnemyAI.cs"

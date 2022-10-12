@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,6 +19,11 @@ public class EnemyIdleState : IState
 
     // Algýlama
     private float chaseRadius;
+
+    // Bekleme
+    private float idleWaitTime;
+    private float timer;
+
     public EnemyIdleState(IdleStateData idleStateData, EnemyAI enemyAI)
     {
         this.moveSpeed = idleStateData.moveSpeed;
@@ -28,11 +34,13 @@ public class EnemyIdleState : IState
         this.animator = enemyAI.animator;
         this.ownTransform = enemyAI.ownTransform;
         this.playerTransform = enemyAI.playerTransform;
+        this.idleWaitTime = idleStateData.waitTime;
     }
 
     public void OnStateEnter()
     {
         Debug.Log(enemyAI.gameObject.name + " Enemy Enter Idle State");
+        timer = 0;
         SetStateSpeed();
         SetAnimatorVariable();
     }
@@ -61,6 +69,16 @@ public class EnemyIdleState : IState
     private void CheckPlayerDistance()
     {
         if (Vector3.Distance(ownTransform.position, playerTransform.position) < chaseRadius)
+        {
+            IdleToChaseWithTime();
+        }
+    }
+
+    private void IdleToChaseWithTime()
+    {
+        timer += Time.deltaTime;
+        // Debug.Log("T: " + timer + " WT: " + idleWaitTime);
+        if (timer > idleWaitTime)
         {
             enemyAI.Chase();
         }

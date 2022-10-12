@@ -51,6 +51,8 @@ public class EnemyAI : MonoBehaviour
     private void SetStateDataVariables()
     {
         idleStateData.chaseRadius = chaseStateData.chaseRadius;
+        attackStateData.chaseRadius = chaseStateData.chaseRadius;
+        chaseStateData.attackRadius = attackStateData.attackRadius;
     }
     #endregion
 

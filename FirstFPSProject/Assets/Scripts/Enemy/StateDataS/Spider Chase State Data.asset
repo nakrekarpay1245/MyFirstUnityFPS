@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.75
   rotateSpeed: 120
-  attackRadius: 3
-  chaseRadius: 10
+  attackRadius: 1.5
+  chaseRadius: 5

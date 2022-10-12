@@ -6,7 +6,7 @@ public class DamageTest : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            CC_FirstPersonController.OnTakeDamage(15);
+            CC_FirstPersonController.OnTakeDamage(2.5f);
         }
     }
 }

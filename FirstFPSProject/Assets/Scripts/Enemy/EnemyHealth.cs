@@ -18,22 +18,21 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float value)
     {
-        Debug.Log("The Enemy Is Just Taked Damage");
+        // Debug.Log("The Enemy Is Just Taked Damage");
 
         health -= value;
         if (health <= 0)
         {
             Dead();
         }
-        Debug.Log("Health: " + health);
+        // Debug.Log("Health: " + health);
     }
 
 
     private void Dead()
     {
-        Debug.Log("The Enemy Is Just Dead");
+        // Debug.Log("The Enemy Is Just Dead");
         health = 0;
         enemyAI.Dead();
     }
-
 }

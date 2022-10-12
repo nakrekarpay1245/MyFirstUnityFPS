@@ -14,5 +14,6 @@ public class IdleStateData : ScriptableObject
     public float waitTime;
 
     [Header("Takip/Kovalama Deðiþkenleri")]
+    [HideInInspector]
     public float chaseRadius;
 }

@@ -559,6 +559,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  damage: 5
   shootTime: 1
   dynamicCrosshair: {fileID: 0}
   camera: {fileID: 0}
@@ -1018,8 +1019,8 @@ MonoBehaviour:
   slopeSpeed: 8
   lookSpeedX: 4
   lookSpeedY: 4
-  upperLookLimit: 90
-  lowerLookLimit: 90
+  upperLookLimit: 80
+  lowerLookLimit: 80
   maxHealth: 100
   timeBeforeRegenStart: 3
   healthValueIncrement: 1

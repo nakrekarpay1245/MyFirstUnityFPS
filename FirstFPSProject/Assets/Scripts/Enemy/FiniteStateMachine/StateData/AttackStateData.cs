@@ -12,7 +12,12 @@ public class AttackStateData : ScriptableObject
 
     [Header("Algýlama Deðiþkenleri")]
     public float attackRadius;
+    [HideInInspector]
+    public float chaseRadius;
 
     [Header("Saldýrý Deðiþkenleri")]
-    public float attackTime;
+    public float attackTime = 3;
+
+    [Header("Bekleme Deðiþkenleri")]
+    public float attackWaitTime = 1;
 }

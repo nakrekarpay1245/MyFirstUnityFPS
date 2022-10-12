@@ -22,7 +22,11 @@ public class EnemyAttackState : IState
 
     // Saldýrý
     private float attackTime;
-    private float timer;
+    private float attackTimer;
+
+    // Bekleme
+    private float attackWaitTime;
+    private float waitTimer;
 
     public EnemyAttackState(AttackStateData attackStateData, EnemyAI enemyAI)
     {
@@ -34,12 +38,16 @@ public class EnemyAttackState : IState
         this.ownTransform = enemyAI.ownTransform;
         this.playerTransform = enemyAI.playerTransform;
         this.attackRadius = attackStateData.attackRadius;
+        this.chaseRadius = attackStateData.chaseRadius;
         this.attackTime = attackStateData.attackTime;
+        this.attackWaitTime = attackStateData.attackWaitTime;
     }
+
     public void OnStateEnter()
     {
         Debug.Log("Enter Attack State");
-        timer = 0;
+        waitTimer = 0;
+        attackTimer = attackTime;
         SetStateSpeed();
         SetAnimatorVariable();
     }
@@ -52,33 +60,50 @@ public class EnemyAttackState : IState
     public void OnStateUpdate()
     {
         Debug.Log("Attack State Update");
-        //CheckPlayerDistance();
-        AttackToIdleWithTime();
+        CheckPlayerDistance();
     }
 
     private void SetStateSpeed()
     {
         navMeshAgent.speed = moveSpeed;
     }
-
     private void SetAnimatorVariable()
     {
-        animator.CrossFade("Attack", 0.2f);
+        animator.SetBool("isWalk", false);
     }
 
-    //private void CheckPlayerDistance()
-    //{
-    //    if (Vector3.Distance(ownTransform.position, playerTransform.position) > chaseRadius)
-    //    {
-    //        enemyAI.Idle();
-    //    }
-    //}
+    private void CheckPlayerDistance()
+    {
+        if (Vector3.Distance(ownTransform.position, playerTransform.position) > chaseRadius)
+        {
+            AttackToIdleWithTime();
+        }
+        else if (Vector3.Distance(ownTransform.position, playerTransform.position) < chaseRadius && Vector3.Distance(ownTransform.position, playerTransform.position) > attackRadius)
+        {
+            AttackToIdleWithTime();
+        }
+        else if (Vector3.Distance(ownTransform.position, playerTransform.position) < attackRadius)
+        {
+            Attack();
+            waitTimer = 0;
+        }
+    }
+
+    private void Attack()
+    {
+        attackTimer += Time.deltaTime;
+        if (attackTimer > attackTime)
+        {
+            attackTimer = 0;
+            animator.CrossFade("Attack", 0.2f);
+        }
+    }
 
     private void AttackToIdleWithTime()
     {
-        timer += Time.deltaTime;
-        Debug.Log("T: " + timer + " AT: " + attackTime);
-        if (timer > attackTime)
+        waitTimer += Time.deltaTime;
+        // Debug.Log("T: " + waitTimer + " AT: " + attackTime);
+        if (waitTimer > attackWaitTime)
         {
             enemyAI.Idle();
         }
