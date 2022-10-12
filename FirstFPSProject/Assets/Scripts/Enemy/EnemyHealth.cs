@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
     private float maxHealth;
     private float health;
 
+    public bool isDead;
+
     private EnemyAI enemyAI;
     private void Awake()
     {
@@ -25,6 +27,10 @@ public class EnemyHealth : MonoBehaviour
         {
             Dead();
         }
+        else
+        {
+            enemyAI.Chase();
+        }
         // Debug.Log("Health: " + health);
     }
 
@@ -32,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
     private void Dead()
     {
         // Debug.Log("The Enemy Is Just Dead");
+        isDead = true;
         health = 0;
         enemyAI.Dead();
     }

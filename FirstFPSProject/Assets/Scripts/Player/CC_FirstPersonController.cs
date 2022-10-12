@@ -77,6 +77,8 @@ public class CC_FirstPersonController : MonoBehaviour
     public static Action<float> OnTakeDamage;
     public static Action<float> OnDamage;
     public static Action<float> OnHeal;
+    [SerializeField]
+    private AudioSource healthAudioSource;
 
     [Header("Jump Paremeters")]
     [SerializeField]
@@ -402,6 +404,10 @@ public class CC_FirstPersonController : MonoBehaviour
 
     private void ApplyDamage(float _damage)
     {
+        if (!healthAudioSource.isPlaying)
+        {
+            healthAudioSource.PlayOneShot(healthAudioSource.clip);
+        }
         currentHealth -= _damage;
         OnDamage?.Invoke(currentHealth);
 

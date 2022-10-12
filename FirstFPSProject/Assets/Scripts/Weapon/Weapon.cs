@@ -90,26 +90,29 @@ public class Weapon : MonoBehaviour
                 {
                     if (Time.time > nextShootTime)
                     {
-                        nextShootTime = Time.time + shootTime;
-
                         EnemyHealth enemyHealth = raycastHit.collider.GetComponentInParent<EnemyHealth>();
 
-                        enemyHealth?.TakeDamage(damage);
+                        if (!enemyHealth.isDead)
+                        {
+                            nextShootTime = Time.time + shootTime;
 
-                        weaponAnimator.CrossFade("Shoot", 0.15f);
+                            enemyHealth?.TakeDamage(damage);
 
-                        dynamicCrosshair.RecoilCrosshair();
+                            weaponAnimator.CrossFade("Shoot", 0.15f);
 
-                        muzzleFlash.Play();
+                            dynamicCrosshair.RecoilCrosshair();
 
-                        weaponAudioSource.clip = weaponShootClip;
-                        weaponAudioSource.pitch = Random.Range(0.95f, 1.05f);
-                        weaponAudioSource.Play();
+                            muzzleFlash.Play();
 
-                        Destroy(Instantiate(hitImpactPrefab, raycastHit.point,
-                            Quaternion.LookRotation(raycastHit.normal)), 5);
+                            weaponAudioSource.clip = weaponShootClip;
+                            weaponAudioSource.pitch = Random.Range(0.95f, 1.05f);
+                            weaponAudioSource.Play();
 
-                        DecreaseBulletCount();
+                            Destroy(Instantiate(hitImpactPrefab, raycastHit.point,
+                                Quaternion.LookRotation(raycastHit.normal)), 5);
+
+                            DecreaseBulletCount();
+                        }
                     }
                 }
                 // Debug.DrawRay(muzzle.transform.position, raycastHit.point, Color.red, 1);

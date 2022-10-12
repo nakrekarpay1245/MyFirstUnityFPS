@@ -11,7 +11,6 @@ public class ChaseStateData : ScriptableObject
     public float rotateSpeed;
 
     [Header("Saldýrý Deðiþkenleri")]
-    [HideInInspector]
     public float attackRadius;
     public float chaseRadius;
 }

@@ -15,4 +15,4 @@ MonoBehaviour:
   moveSpeed: 0.75
   rotateSpeed: 120
   attackRadius: 1.5
-  chaseRadius: 5
+  chaseRadius: 15

@@ -12,7 +12,6 @@ public class AttackStateData : ScriptableObject
 
     [Header("Algýlama Deðiþkenleri")]
     public float attackRadius;
-    [HideInInspector]
     public float chaseRadius;
 
     [Header("Saldýrý Deðiþkenleri")]

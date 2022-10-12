@@ -27,11 +27,9 @@ public class EnemyAI : MonoBehaviour
     public ChaseStateData chaseStateData;
     public AttackStateData attackStateData;
     public DeadStateData deadStateData;
-
     private void Awake()
     {
         ComponentAttach();
-        SetStateDataVariables();
         CreateStates();
     }
 
@@ -46,14 +44,7 @@ public class EnemyAI : MonoBehaviour
         stateManager = GetComponent<StateManager>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
-    }
-
-    private void SetStateDataVariables()
-    {
-        idleStateData.chaseRadius = chaseStateData.chaseRadius;
-        attackStateData.chaseRadius = chaseStateData.chaseRadius;
-        chaseStateData.attackRadius = attackStateData.attackRadius;
-    }
+    }    
     #endregion
 
 
@@ -63,6 +54,7 @@ public class EnemyAI : MonoBehaviour
     {
         stateManager.ChangeState(idleState);
     }
+
     public void Chase()
     {
         stateManager.ChangeState(chaseState);

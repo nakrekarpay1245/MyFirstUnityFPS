@@ -17,6 +17,7 @@ public class StateManager : MonoBehaviour
         currentState.OnStateEnter();
     }
 
+
     public void Update()
     {
         if (currentState != null)
