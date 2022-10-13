@@ -79,6 +79,8 @@ public class CC_FirstPersonController : MonoBehaviour
     public static Action<float> OnHeal;
     [SerializeField]
     private AudioSource healthAudioSource;
+    [SerializeField]
+    private BloodScreenEffect bloodScreenEffect;
 
     [Header("Jump Paremeters")]
     [SerializeField]
@@ -408,6 +410,7 @@ public class CC_FirstPersonController : MonoBehaviour
         {
             healthAudioSource.PlayOneShot(healthAudioSource.clip);
         }
+        bloodScreenEffect.BloodEffect();
         currentHealth -= _damage;
         OnDamage?.Invoke(currentHealth);
 
