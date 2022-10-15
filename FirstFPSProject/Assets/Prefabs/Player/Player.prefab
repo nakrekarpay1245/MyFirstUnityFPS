@@ -896,6 +896,7 @@ GameObject:
   - component: {fileID: 6899102507363625754}
   - component: {fileID: 6899102507363625755}
   - component: {fileID: 6899102507363625748}
+  - component: {fileID: 1052519930151359853}
   - component: {fileID: 487592172}
   - component: {fileID: 2134424195}
   m_Layer: 2
@@ -1022,12 +1023,6 @@ MonoBehaviour:
   lookSpeedY: 4
   upperLookLimit: 80
   lowerLookLimit: 80
-  maxHealth: 100
-  timeBeforeRegenStart: 3
-  healthValueIncrement: 1
-  healthTimeIncrement: 0.1
-  storageHealth: 0
-  healthAudioSource: {fileID: 2134424195}
   jumpForce: 15
   gravity: 30
   dynamicCrosshair: {fileID: 0}
@@ -1063,6 +1058,26 @@ MonoBehaviour:
   interactionLayer:
     serializedVersion: 2
     m_Bits: 512
+  playerCamera: {fileID: 0}
+--- !u!114 &1052519930151359853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899102507363625749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2b7e20389484748957f4f913afe3fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  timeBeforeRegenStart: 3
+  healthValueIncrement: 1
+  healthTimeIncrement: 0.1
+  storageHealth: 0
+  healthAudioSource: {fileID: 0}
+  bloodScreenEffect: {fileID: 0}
 --- !u!82 &487592172
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1169,7 +1184,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8f0ee344d6d83a142a855a919b78efde, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a75eebd941f7777479b85c98a847f609, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

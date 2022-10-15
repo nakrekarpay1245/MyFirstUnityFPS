@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1077830745951260973}
-  - {fileID: 5762001375308697167}
+  - {fileID: 3876395484059576610}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5762001375308697166}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -441,7 +441,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1212667920953950744, guid: 8b0ac5a69b00d5641a5c2da008093086, type: 3}
   m_PrefabInstance: {fileID: 2171151008486626101}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6403971828360167515
+--- !u!1001 &2513711101953091382
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -497,38 +497,29 @@ PrefabInstance:
       value: HealthBagParticle
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.g
-      value: 0.49019608
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.29411766
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key1.r
-      value: 1
+      propertyPath: ColorModule.gradient.maxGradient.key2.b
+      value: 0.09803922
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key2.g
-      value: 0
+      value: 0.09803922
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key2.r
-      value: 1
+      propertyPath: ColorModule.gradient.maxGradient.key3.b
+      value: 0.19607843
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key3.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669084808649772570, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key3.r
-      value: 1
+      value: 0.19607843
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
---- !u!1 &5762001375308697166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1669084808649772565, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-  m_PrefabInstance: {fileID: 6403971828360167515}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5762001375308697167 stripped
+--- !u!4 &3876395484059576610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669084808649772564, guid: f6452e77d40a59343811cd5e92af02c6, type: 3}
-  m_PrefabInstance: {fileID: 6403971828360167515}
+  m_PrefabInstance: {fileID: 2513711101953091382}
   m_PrefabAsset: {fileID: 0}

@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AmmoBoxModel
       objectReference: {fileID: 0}
+    - target: {fileID: 3281966242072287994, guid: 07d32277b43946944b25195774aecdf5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4127009133974894254, guid: 07d32277b43946944b25195774aecdf5, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.2

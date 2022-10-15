@@ -55,6 +55,7 @@ public class Weapon : MonoBehaviour
     private void Awake()
     {
         camera = Camera.main;
+        // camera = GameObject.Find("MainCamera").GetComponent<Camera>();
         muzzleFlash = GetComponentInChildren<ParticleSystem>();
         weaponAnimator = GetComponentInChildren<Animator>();
         weaponAudioSource = GetComponentInChildren<AudioSource>();

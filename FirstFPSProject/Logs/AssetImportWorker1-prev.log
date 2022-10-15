@@ -15,7 +15,7 @@ D:/GitHub/MyFirstUnityFPS/FirstFPSProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52978
+51670
 Successfully changed project path to: D:/GitHub/MyFirstUnityFPS/FirstFPSProject
 D:/GitHub/MyFirstUnityFPS/FirstFPSProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/GitHub/MyFirstUnityFPS/FirstFPSProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 180.25 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 165.16 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.7f1 (24e8595d6d43)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -65,769 +65,97 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013423 seconds.
+Registered in 0.016883 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 159.01 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 157.89 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.188 seconds
+- Completed reload, in  1.191 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1189ms)
-		BeginReloadAssembly (130ms)
+	ReloadAssembly (1192ms)
+		BeginReloadAssembly (150ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (864ms)
-			LoadAssemblies (124ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (839ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (541ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (499ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (96ms)
+				InitializePlatformSupportModulesInManaged (104ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (159ms)
+				RefreshPlugins (158ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (81ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015834 seconds.
+Registered in 0.015491 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.81 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.48 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.217 seconds
+- Completed reload, in  2.023 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2219ms)
-		BeginReloadAssembly (350ms)
+	ReloadAssembly (2024ms)
+		BeginReloadAssembly (304ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (136ms)
-		EndReloadAssembly (1598ms)
-			LoadAssemblies (186ms)
+			CreateAndSetChildDomain (133ms)
+		EndReloadAssembly (1507ms)
+			LoadAssemblies (156ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (536ms)
+			SetupTypeCache (506ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (105ms)
-			SetupLoadedEditorAssemblies (710ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (680ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (37ms)
+				InitializePlatformSupportModulesInManaged (27ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (158ms)
-				ProcessInitializeOnLoadAttributes (437ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
-				AfterProcessingInitializeOnLoad (23ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 2.22 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3570 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (111.5 KB). Loaded Objects now: 4037.
-Memory consumption went from 129.6 MB to 129.5 MB.
-Total: 4.395000 ms (FindLiveObjects: 0.405400 ms CreateObjectMapping: 0.230900 ms MarkObjects: 3.583900 ms  DeleteObjects: 0.173800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012086 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.906 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1907ms)
-		BeginReloadAssembly (237ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1481ms)
-			LoadAssemblies (161ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (485ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (663ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (46ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (138ms)
-				ProcessInitializeOnLoadAttributes (395ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.99 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.0 KB). Loaded Objects now: 4040.
-Memory consumption went from 126.5 MB to 126.4 MB.
-Total: 5.247100 ms (FindLiveObjects: 0.369900 ms CreateObjectMapping: 0.177200 ms MarkObjects: 4.572800 ms  DeleteObjects: 0.126200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012359 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.939 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1940ms)
-		BeginReloadAssembly (244ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1502ms)
-			LoadAssemblies (173ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (533ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (632ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (375ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (23ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.92 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4043.
-Memory consumption went from 126.5 MB to 126.4 MB.
-Total: 4.628000 ms (FindLiveObjects: 0.358100 ms CreateObjectMapping: 0.169300 ms MarkObjects: 3.918200 ms  DeleteObjects: 0.181200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011859 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.74 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.929 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1930ms)
-		BeginReloadAssembly (248ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1484ms)
-			LoadAssemblies (176ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (538ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (622ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (128ms)
-				ProcessInitializeOnLoadAttributes (371ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 8.25 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4046.
-Memory consumption went from 126.5 MB to 126.5 MB.
-Total: 4.274400 ms (FindLiveObjects: 0.388500 ms CreateObjectMapping: 0.189800 ms MarkObjects: 3.570200 ms  DeleteObjects: 0.124700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016074 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.896 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1898ms)
-		BeginReloadAssembly (236ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1459ms)
-			LoadAssemblies (175ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (493ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (632ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (373ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
-				AfterProcessingInitializeOnLoad (23ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.63 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.2 KB). Loaded Objects now: 4049.
-Memory consumption went from 126.6 MB to 126.5 MB.
-Total: 4.870500 ms (FindLiveObjects: 0.368000 ms CreateObjectMapping: 0.172600 ms MarkObjects: 4.193100 ms  DeleteObjects: 0.135200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013600 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.904 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1905ms)
-		BeginReloadAssembly (235ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1452ms)
-			LoadAssemblies (172ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (497ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (625ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (44ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (127ms)
-				ProcessInitializeOnLoadAttributes (379ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 8.08 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3535 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4052.
-Memory consumption went from 126.6 MB to 126.5 MB.
-Total: 4.991600 ms (FindLiveObjects: 0.360000 ms CreateObjectMapping: 0.178400 ms MarkObjects: 4.020900 ms  DeleteObjects: 0.430700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014043 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.70 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.800 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1802ms)
-		BeginReloadAssembly (262ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1346ms)
-			LoadAssemblies (196ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (467ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (583ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (335ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 5.63 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4056.
-Memory consumption went from 126.6 MB to 126.5 MB.
-Total: 4.267200 ms (FindLiveObjects: 0.376200 ms CreateObjectMapping: 0.175100 ms MarkObjects: 3.498400 ms  DeleteObjects: 0.215900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014631 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.753 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1754ms)
-		BeginReloadAssembly (243ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1305ms)
-			LoadAssemblies (176ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (431ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (569ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (40ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (119ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				BeforeProcessingInitializeOnLoad (176ms)
+				ProcessInitializeOnLoadAttributes (407ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.68 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4060.
-Memory consumption went from 126.6 MB to 126.6 MB.
-Total: 4.516900 ms (FindLiveObjects: 0.359500 ms CreateObjectMapping: 0.181200 ms MarkObjects: 3.851400 ms  DeleteObjects: 0.123500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015997 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.700 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1701ms)
-		BeginReloadAssembly (244ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1268ms)
-			LoadAssemblies (165ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (440ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (543ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (37ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (118ms)
-				ProcessInitializeOnLoadAttributes (321ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.22 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (79.1 KB). Loaded Objects now: 4062.
-Memory consumption went from 126.6 MB to 126.5 MB.
-Total: 5.202600 ms (FindLiveObjects: 0.411300 ms CreateObjectMapping: 0.388300 ms MarkObjects: 4.275900 ms  DeleteObjects: 0.125800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2873892.586488 seconds.
-  path: Assets/SoundAndSFX/UI_button12.wav
-  artifactKey: Guid(198a7f3e78fd69049a3ed122328edd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SoundAndSFX/UI_button12.wav using Guid(198a7f3e78fd69049a3ed122328edd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089f726cc1cabbf2cad66e48b604d507') in 0.239650 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011842 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.966 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1967ms)
-		BeginReloadAssembly (250ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1506ms)
-			LoadAssemblies (181ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (527ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (646ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (49ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (137ms)
-				ProcessInitializeOnLoadAttributes (376ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.76 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.2 KB). Loaded Objects now: 4073.
-Memory consumption went from 131.0 MB to 130.9 MB.
-Total: 6.345500 ms (FindLiveObjects: 0.378000 ms CreateObjectMapping: 0.194500 ms MarkObjects: 5.511000 ms  DeleteObjects: 0.260500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 89.883837 seconds.
-  path: Assets/SoundAndSFX/UI_button09.wav
-  artifactKey: Guid(02cbfde80d09b374cad3d046672dc6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SoundAndSFX/UI_button09.wav using Guid(02cbfde80d09b374cad3d046672dc6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5cf992d3bb643f29a8eaf38f07aa4e1') in 0.089424 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016435 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.80 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.961 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1962ms)
-		BeginReloadAssembly (250ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1501ms)
-			LoadAssemblies (185ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (529ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (639ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (380ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.07 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4076.
-Memory consumption went from 131.0 MB to 130.9 MB.
-Total: 6.269300 ms (FindLiveObjects: 0.378800 ms CreateObjectMapping: 0.181600 ms MarkObjects: 5.545800 ms  DeleteObjects: 0.161800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014440 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.66 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.955 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1956ms)
-		BeginReloadAssembly (250ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1498ms)
-			LoadAssemblies (186ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (525ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (639ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (56ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (365ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+========================================================================
+Worker process is ready to serve import requests
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.34 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4079.
-Memory consumption went from 131.0 MB to 130.9 MB.
-Total: 4.322000 ms (FindLiveObjects: 0.364700 ms CreateObjectMapping: 0.181700 ms MarkObjects: 3.633000 ms  DeleteObjects: 0.141600 ms)
+Unloading 3584 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (111.4 KB). Loaded Objects now: 4054.
+Memory consumption went from 130.0 MB to 129.9 MB.
+Total: 4.673900 ms (FindLiveObjects: 0.428600 ms CreateObjectMapping: 0.231700 ms MarkObjects: 3.816400 ms  DeleteObjects: 0.195800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -840,9 +168,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 3021084.631666 seconds.
+  path: Assets/Prefabs/Models/WoodenTorchModel.prefab
+  artifactKey: Guid(ebcff7df563b47e4cacfdb6430e61b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Models/WoodenTorchModel.prefab using Guid(ebcff7df563b47e4cacfdb6430e61b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b038e7f7e0e0a7b53fbe8de4804e138') in 0.210403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.673305 seconds.
+  path: Assets/Arts/HelmetIcon.png
+  artifactKey: Guid(2680fcdb91149ab46a4a9e8198386d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arts/HelmetIcon.png using Guid(2680fcdb91149ab46a4a9e8198386d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bad3ba1c1f8e6f9fd72d834177cfb1') in 0.066663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Arts/SilencerIcon.png
+  artifactKey: Guid(ba67e395a2526de42940cd9c5f170de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arts/SilencerIcon.png using Guid(ba67e395a2526de42940cd9c5f170de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4183456410bd7cd2755e149bef4e86d') in 0.013542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.909876 seconds.
+  path: Assets/Arts/HelmetIcon.png
+  artifactKey: Guid(2680fcdb91149ab46a4a9e8198386d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arts/HelmetIcon.png using Guid(2680fcdb91149ab46a4a9e8198386d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855602c48de3171bbc27c852932b0bfc') in 0.068619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Arts/SilencerIcon.png
+  artifactKey: Guid(ba67e395a2526de42940cd9c5f170de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arts/SilencerIcon.png using Guid(ba67e395a2526de42940cd9c5f170de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c169e9774e36043bb0a565c916a7b42b') in 0.036002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.494596 seconds.
+  path: Assets/Models/Ammo Canister/BinocularBox_9.mat
+  artifactKey: Guid(7cbe48f33427e2c47b01a1578614606a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ammo Canister/BinocularBox_9.mat using Guid(7cbe48f33427e2c47b01a1578614606a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4d04f7179b36f601cb6f922302145a') in 0.041295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.889078 seconds.
+  path: Assets/Prefabs/Models/BinocularBoxModel.prefab
+  artifactKey: Guid(6d180090cbfafa8438fe53e1c353c262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Models/BinocularBoxModel.prefab using Guid(6d180090cbfafa8438fe53e1c353c262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f8d5d8998d37a99d98a5ad1415e934') in 0.030279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 296.350891 seconds.
+  path: Assets/Prefabs/Props/HealthBag.prefab
+  artifactKey: Guid(31c1aa3dee316f142b0b0fea6fe2a2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Props/HealthBag.prefab using Guid(31c1aa3dee316f142b0b0fea6fe2a2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67eceeee3c4292bfb42dc2a419fb8774') in 0.038552 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015570 seconds.
+Registered in 0.014337 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -852,42 +228,42 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.01 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.968 seconds
+- Completed reload, in  2.048 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1969ms)
-		BeginReloadAssembly (236ms)
+	ReloadAssembly (2049ms)
+		BeginReloadAssembly (238ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1548ms)
-			LoadAssemblies (160ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1618ms)
+			LoadAssemblies (169ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (544ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (663ms)
+			SetupTypeCache (531ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (673ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (47ms)
+				InitializePlatformSupportModulesInManaged (50ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (398ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
-				AfterProcessingInitializeOnLoad (27ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (399ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (22ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 9.08 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.47 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.3 KB). Loaded Objects now: 4082.
-Memory consumption went from 131.0 MB to 130.9 MB.
-Total: 5.576400 ms (FindLiveObjects: 0.423500 ms CreateObjectMapping: 0.388700 ms MarkObjects: 4.617000 ms  DeleteObjects: 0.145700 ms)
+Unloading 3549 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (79.7 KB). Loaded Objects now: 4100.
+Memory consumption went from 131.7 MB to 131.6 MB.
+Total: 4.888700 ms (FindLiveObjects: 0.395100 ms CreateObjectMapping: 0.180000 ms MarkObjects: 4.160100 ms  DeleteObjects: 0.152300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -900,54 +276,108 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 188.662826 seconds.
+  path: Assets/Models/Ammo Canister/BinocularBox_10.mat
+  artifactKey: Guid(742df822772375b4fb7c3d0e37b8f883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ammo Canister/BinocularBox_10.mat using Guid(742df822772375b4fb7c3d0e37b8f883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c99adad7ac8c6d1575d0dc424c8cf2') in 0.127467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.899939 seconds.
+  path: Assets/Models/Ammo Canister/WeaponUpgradeBox_10 1.mat
+  artifactKey: Guid(160ff50a07fa1ca43804f8a96f82431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ammo Canister/WeaponUpgradeBox_10 1.mat using Guid(160ff50a07fa1ca43804f8a96f82431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01c3d6ef7bdf031c0fd2923739c3df6') in 0.014485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 96.292831 seconds.
+  path: Assets/Prefabs/Models/HelmetBoxModel.prefab
+  artifactKey: Guid(70ecd212b81a15f439a0c3156b29cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Models/HelmetBoxModel.prefab using Guid(70ecd212b81a15f439a0c3156b29cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30bf418c31abe78775a9b5058eb77ec1') in 0.067078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.501442 seconds.
+  path: Assets/Prefabs/Models/HelmetBoxModel.prefab
+  artifactKey: Guid(70ecd212b81a15f439a0c3156b29cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Models/HelmetBoxModel.prefab using Guid(70ecd212b81a15f439a0c3156b29cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc1f0130cbe377d75c882ba8db36459') in 0.022256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 334.166331 seconds.
+  path: Assets/Prefabs/Props/BinocularBox .prefab
+  artifactKey: Guid(5db80a0f3caa05a4fb9518207c9ee4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Props/BinocularBox .prefab using Guid(5db80a0f3caa05a4fb9518207c9ee4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c624c02feb5d8ec13b5b9448a229555') in 0.044606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/Props/SilencerBox  .prefab
+  artifactKey: Guid(a68129b9416db1940bc2f23c3d7c6b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Props/SilencerBox  .prefab using Guid(a68129b9416db1940bc2f23c3d7c6b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dddfad1ab9ae89b56b1a1f20fda0a4') in 0.026835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 150.425772 seconds.
+  path: Assets/Prefabs/Props/HealthBag.prefab
+  artifactKey: Guid(31c1aa3dee316f142b0b0fea6fe2a2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Props/HealthBag.prefab using Guid(31c1aa3dee316f142b0b0fea6fe2a2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762bdebd54af890c51f92b3f24602123') in 0.027567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.257432 seconds.
+  path: Assets/Models/Ammo Canister/PlayerUpgradeBox_10.mat
+  artifactKey: Guid(160ff50a07fa1ca43804f8a96f82431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ammo Canister/PlayerUpgradeBox_10.mat using Guid(160ff50a07fa1ca43804f8a96f82431d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa6af8a2e6fbc4663dd91b130e33d93') in 0.017716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.139007 seconds.
+  path: Assets/Models/Ammo Canister/PlayerUpgradeBox_9.mat
+  artifactKey: Guid(a4c1364c4e67b2b46a581c823deb6c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ammo Canister/PlayerUpgradeBox_9.mat using Guid(a4c1364c4e67b2b46a581c823deb6c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef6a8dd04e91e70225f464be4f8fde6') in 0.016956 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.014247 seconds.
+Registered in 0.017739 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.52 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.938 seconds
+- Completed reload, in  1.978 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1940ms)
-		BeginReloadAssembly (230ms)
+	ReloadAssembly (1979ms)
+		BeginReloadAssembly (266ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1513ms)
-			LoadAssemblies (158ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1507ms)
+			LoadAssemblies (187ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (536ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (647ms)
+			SetupTypeCache (511ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (694ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (44ms)
+				InitializePlatformSupportModulesInManaged (39ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (379ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (24ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (447ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.78 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.14 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (80.1 KB). Loaded Objects now: 4085.
-Memory consumption went from 131.0 MB to 130.9 MB.
-Total: 5.892000 ms (FindLiveObjects: 0.694200 ms CreateObjectMapping: 0.500800 ms MarkObjects: 4.564900 ms  DeleteObjects: 0.130500 ms)
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (172.6 KB). Loaded Objects now: 4272.
+Memory consumption went from 137.3 MB to 137.1 MB.
+Total: 4.753800 ms (FindLiveObjects: 0.361600 ms CreateObjectMapping: 0.185900 ms MarkObjects: 4.048500 ms  DeleteObjects: 0.156800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -962,7 +392,727 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.013312 seconds.
+Registered in 0.014055 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.032 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2033ms)
+		BeginReloadAssembly (247ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1583ms)
+			LoadAssemblies (192ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (537ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (687ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (421ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.03 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (173.0 KB). Loaded Objects now: 4287.
+Memory consumption went from 137.3 MB to 137.1 MB.
+Total: 4.735400 ms (FindLiveObjects: 0.458800 ms CreateObjectMapping: 0.200200 ms MarkObjects: 3.894800 ms  DeleteObjects: 0.180500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017758 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.987 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1988ms)
+		BeginReloadAssembly (249ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1534ms)
+			LoadAssemblies (187ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (510ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (689ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (420ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.1 KB). Loaded Objects now: 4302.
+Memory consumption went from 137.3 MB to 137.1 MB.
+Total: 5.743400 ms (FindLiveObjects: 0.382600 ms CreateObjectMapping: 0.184400 ms MarkObjects: 4.989600 ms  DeleteObjects: 0.185400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014728 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.963 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1964ms)
+		BeginReloadAssembly (241ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1541ms)
+			LoadAssemblies (167ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (522ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (695ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (427ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.85 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.1 KB). Loaded Objects now: 4317.
+Memory consumption went from 137.3 MB to 137.1 MB.
+Total: 4.513600 ms (FindLiveObjects: 0.396500 ms CreateObjectMapping: 0.195900 ms MarkObjects: 3.743100 ms  DeleteObjects: 0.176800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015177 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1897ms)
+		BeginReloadAssembly (266ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (1428ms)
+			LoadAssemblies (195ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (478ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (620ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (387ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.73 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.3 KB). Loaded Objects now: 4332.
+Memory consumption went from 137.3 MB to 137.2 MB.
+Total: 4.586700 ms (FindLiveObjects: 0.433500 ms CreateObjectMapping: 0.210100 ms MarkObjects: 3.770500 ms  DeleteObjects: 0.171200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014797 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2072ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1638ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (523ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (743ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (462ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 10.06 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (173.2 KB). Loaded Objects now: 4347.
+Memory consumption went from 137.4 MB to 137.2 MB.
+Total: 6.961100 ms (FindLiveObjects: 1.038300 ms CreateObjectMapping: 0.415600 ms MarkObjects: 5.243500 ms  DeleteObjects: 0.261900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013983 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.061 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2063ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1634ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (517ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (741ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (455ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.48 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.3 KB). Loaded Objects now: 4362.
+Memory consumption went from 137.4 MB to 137.2 MB.
+Total: 4.574900 ms (FindLiveObjects: 0.374200 ms CreateObjectMapping: 0.186800 ms MarkObjects: 3.775600 ms  DeleteObjects: 0.237200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017981 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.473 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2474ms)
+		BeginReloadAssembly (251ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1999ms)
+			LoadAssemblies (185ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (907ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (725ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (56ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (166ms)
+				ProcessInitializeOnLoadAttributes (416ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 9.99 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (173.3 KB). Loaded Objects now: 4377.
+Memory consumption went from 137.4 MB to 137.2 MB.
+Total: 6.826600 ms (FindLiveObjects: 0.745200 ms CreateObjectMapping: 0.286900 ms MarkObjects: 5.538600 ms  DeleteObjects: 0.253400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014673 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.425 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2427ms)
+		BeginReloadAssembly (264ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1956ms)
+			LoadAssemblies (207ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (893ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (708ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (459ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.81 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.2 KB). Loaded Objects now: 4392.
+Memory consumption went from 137.4 MB to 137.3 MB.
+Total: 7.550300 ms (FindLiveObjects: 0.429900 ms CreateObjectMapping: 0.223800 ms MarkObjects: 6.632100 ms  DeleteObjects: 0.262700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015545 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.620 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2622ms)
+		BeginReloadAssembly (301ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (2117ms)
+			LoadAssemblies (213ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (488ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (580ms)
+				ProcessInitializeOnLoadAttributes (613ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.86 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.3 KB). Loaded Objects now: 4407.
+Memory consumption went from 137.4 MB to 137.3 MB.
+Total: 4.982300 ms (FindLiveObjects: 0.430100 ms CreateObjectMapping: 0.199400 ms MarkObjects: 4.185900 ms  DeleteObjects: 0.165600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017943 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.344 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2345ms)
+		BeginReloadAssembly (271ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1827ms)
+			LoadAssemblies (192ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (1071ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (837ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.10 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.2 KB). Loaded Objects now: 4422.
+Memory consumption went from 137.5 MB to 137.3 MB.
+Total: 4.417500 ms (FindLiveObjects: 0.395200 ms CreateObjectMapping: 0.186000 ms MarkObjects: 3.672600 ms  DeleteObjects: 0.162600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013760 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2055ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1626ms)
+			LoadAssemblies (174ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (519ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (739ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (463ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.96 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (173.2 KB). Loaded Objects now: 4437.
+Memory consumption went from 137.5 MB to 137.3 MB.
+Total: 5.725700 ms (FindLiveObjects: 0.680900 ms CreateObjectMapping: 0.390700 ms MarkObjects: 4.473600 ms  DeleteObjects: 0.178500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017236 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2049ms)
+		BeginReloadAssembly (255ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1591ms)
+			LoadAssemblies (187ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (487ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (742ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (29ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.55 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.3 KB). Loaded Objects now: 4452.
+Memory consumption went from 137.5 MB to 137.3 MB.
+Total: 6.210900 ms (FindLiveObjects: 0.436100 ms CreateObjectMapping: 0.214700 ms MarkObjects: 5.366600 ms  DeleteObjects: 0.192200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018047 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -972,222 +1122,42 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.897 seconds
+- Completed reload, in  1.835 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1899ms)
-		BeginReloadAssembly (233ms)
+	ReloadAssembly (1836ms)
+		BeginReloadAssembly (234ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1476ms)
-			LoadAssemblies (164ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1412ms)
+			LoadAssemblies (175ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (490ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (653ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (389ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
-				AfterProcessingInitializeOnLoad (25ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 8.35 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4088.
-Memory consumption went from 131.0 MB to 131.0 MB.
-Total: 6.954900 ms (FindLiveObjects: 0.497900 ms CreateObjectMapping: 0.205800 ms MarkObjects: 6.113200 ms  DeleteObjects: 0.135900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015219 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.67 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.959 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1960ms)
-		BeginReloadAssembly (279ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1483ms)
-			LoadAssemblies (202ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (508ms)
+			SetupTypeCache (484ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (643ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (616ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (44ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (141ms)
-				ProcessInitializeOnLoadAttributes (379ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 9.12 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3536 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4091.
-Memory consumption went from 131.0 MB to 131.0 MB.
-Total: 9.599900 ms (FindLiveObjects: 0.489800 ms CreateObjectMapping: 2.678300 ms MarkObjects: 5.968800 ms  DeleteObjects: 0.460600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.031134 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.32 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.308 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3309ms)
-		BeginReloadAssembly (360ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (2647ms)
-			LoadAssemblies (265ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (808ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (99ms)
-			SetupLoadedEditorAssemblies (1377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (45ms)
+				InitializePlatformSupportModulesInManaged (37ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (155ms)
-				ProcessInitializeOnLoadAttributes (1076ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
-				AfterProcessingInitializeOnLoad (34ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.14 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.2 KB). Loaded Objects now: 4095.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 4.446000 ms (FindLiveObjects: 0.460900 ms CreateObjectMapping: 0.203700 ms MarkObjects: 3.631000 ms  DeleteObjects: 0.148700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012589 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.813 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1814ms)
-		BeginReloadAssembly (262ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1323ms)
-			LoadAssemblies (184ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (464ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (560ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (40ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (332ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
-				AfterProcessingInitializeOnLoad (20ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (375ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (23ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 9.22 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.18 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (80.3 KB). Loaded Objects now: 4098.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 6.170600 ms (FindLiveObjects: 0.433100 ms CreateObjectMapping: 0.391600 ms MarkObjects: 5.081000 ms  DeleteObjects: 0.262900 ms)
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.3 KB). Loaded Objects now: 4467.
+Memory consumption went from 137.5 MB to 137.3 MB.
+Total: 5.176300 ms (FindLiveObjects: 0.413300 ms CreateObjectMapping: 0.216900 ms MarkObjects: 4.356000 ms  DeleteObjects: 0.188800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1202,7 +1172,67 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.012768 seconds.
+Registered in 0.017727 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.56 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2079ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1650ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (539ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (751ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (52ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (459ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 10.35 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (173.3 KB). Loaded Objects now: 4482.
+Memory consumption went from 137.5 MB to 137.4 MB.
+Total: 6.621500 ms (FindLiveObjects: 0.943800 ms CreateObjectMapping: 0.314100 ms MarkObjects: 5.178600 ms  DeleteObjects: 0.183600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016841 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -1212,42 +1242,102 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.857 seconds
+- Completed reload, in  1.860 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1858ms)
-		BeginReloadAssembly (231ms)
+	ReloadAssembly (1861ms)
+		BeginReloadAssembly (232ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1426ms)
-			LoadAssemblies (173ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1440ms)
+			LoadAssemblies (162ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (501ms)
+			SetupTypeCache (476ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (607ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (647ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (38ms)
+				InitializePlatformSupportModulesInManaged (39ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (396ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 8.18 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.2 KB). Loaded Objects now: 4497.
+Memory consumption went from 137.5 MB to 137.4 MB.
+Total: 6.063100 ms (FindLiveObjects: 0.816700 ms CreateObjectMapping: 0.595300 ms MarkObjects: 4.473800 ms  DeleteObjects: 0.176400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016774 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1927ms)
+		BeginReloadAssembly (233ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1496ms)
+			LoadAssemblies (184ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (654ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (408ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (25ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.55 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 6.67 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4101.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 4.446100 ms (FindLiveObjects: 0.403200 ms CreateObjectMapping: 0.179600 ms MarkObjects: 3.734500 ms  DeleteObjects: 0.127600 ms)
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.1 KB). Loaded Objects now: 4512.
+Memory consumption went from 137.6 MB to 137.4 MB.
+Total: 5.072000 ms (FindLiveObjects: 0.428500 ms CreateObjectMapping: 0.195200 ms MarkObjects: 4.250100 ms  DeleteObjects: 0.197000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1262,187 +1352,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.016384 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.264 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2265ms)
-		BeginReloadAssembly (231ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1826ms)
-			LoadAssemblies (164ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (898ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (623ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (39ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (150ms)
-				ProcessInitializeOnLoadAttributes (359ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 8.36 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4104.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 4.428600 ms (FindLiveObjects: 0.412400 ms CreateObjectMapping: 0.236100 ms MarkObjects: 3.622800 ms  DeleteObjects: 0.156200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013350 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.775 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1776ms)
-		BeginReloadAssembly (231ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1356ms)
-			LoadAssemblies (163ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (491ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (553ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (37ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (325ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.58 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4107.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 4.188300 ms (FindLiveObjects: 0.395900 ms CreateObjectMapping: 0.185000 ms MarkObjects: 3.478700 ms  DeleteObjects: 0.127600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012769 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.940 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1941ms)
-		BeginReloadAssembly (246ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (61ms)
-		EndReloadAssembly (1477ms)
-			LoadAssemblies (178ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (507ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (633ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (386ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
-				AfterProcessingInitializeOnLoad (24ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 7.28 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.2 KB). Loaded Objects now: 4110.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 5.545500 ms (FindLiveObjects: 0.708900 ms CreateObjectMapping: 0.266100 ms MarkObjects: 4.405900 ms  DeleteObjects: 0.163100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012399 seconds.
+Registered in 0.017873 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GitHub\MyFirstUnityFPS\FirstFPSProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -1452,42 +1362,42 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.69 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.963 seconds
+- Completed reload, in  2.099 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1964ms)
-		BeginReloadAssembly (259ms)
+	ReloadAssembly (2100ms)
+		BeginReloadAssembly (252ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (59ms)
-		EndReloadAssembly (1492ms)
-			LoadAssemblies (198ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1628ms)
+			LoadAssemblies (187ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (516ms)
+			SetupTypeCache (532ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (631ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (751ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
+				InitializePlatformSupportModulesInManaged (46ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (369ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (31ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (465ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 6.39 ms, found 6 plugins.
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 7.93 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3537 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (79.1 KB). Loaded Objects now: 4113.
-Memory consumption went from 131.1 MB to 131.0 MB.
-Total: 5.050400 ms (FindLiveObjects: 0.379600 ms CreateObjectMapping: 0.213400 ms MarkObjects: 4.332000 ms  DeleteObjects: 0.124400 ms)
+Unloading 3709 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (172.2 KB). Loaded Objects now: 4527.
+Memory consumption went from 137.6 MB to 137.4 MB.
+Total: 6.414400 ms (FindLiveObjects: 0.673800 ms CreateObjectMapping: 0.709800 ms MarkObjects: 4.863500 ms  DeleteObjects: 0.165800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
