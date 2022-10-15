@@ -43,4 +43,16 @@ public class DynamicCrosshair : MonoBehaviour
     {
         crosshair.sizeDelta = currentSize * 2;
     }
+
+    public void Zoom(bool _zoom)
+    {
+        if (_zoom)
+        {
+            crosshair.gameObject.SetActive(false);
+        }
+        else
+        {
+            crosshair.gameObject.SetActive(true);
+        }
+    }
 }

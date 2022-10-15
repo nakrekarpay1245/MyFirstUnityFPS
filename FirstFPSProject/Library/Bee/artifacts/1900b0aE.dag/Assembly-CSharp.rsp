@@ -377,6 +377,7 @@
 "Assets/Scripts/Enemy/FiniteStateMachine/States/Enemy/EnemyIdleState.cs"
 "Assets/Scripts/Game/UI.cs"
 "Assets/Scripts/Interactables/AmmoBoxInteractable.cs"
+"Assets/Scripts/Interactables/ArmorBoxInteractable.cs"
 "Assets/Scripts/Interactables/HealthBagInteractable.cs"
 "Assets/Scripts/Interactables/Interactable.cs"
 "Assets/Scripts/Interactables/TestInteractable.cs"
@@ -388,6 +389,7 @@
 "Assets/Scripts/Weapon/DynamicCrosshair.cs"
 "Assets/Scripts/Weapon/Weapon.cs"
 "Assets/Scripts/Weapon/WeaponSway.cs"
+"Assets/Scripts/Weapon/WeaponZoom.cs"
 -langversion:9.0
 
 /deterministic

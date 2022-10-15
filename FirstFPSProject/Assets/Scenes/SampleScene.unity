@@ -316,17 +316,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &571374222 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6899102507363625748, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-  m_PrefabInstance: {fileID: 6899102507568306499}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 162fe0847a346d746b81e5ad851adb13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &592360740 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 592360740, guid: 3748092c34fd4784386a7f3b17bb1cc4, type: 3}
@@ -454,6 +443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BinocularBox '
       objectReference: {fileID: 0}
+    - target: {fileID: 1180115474441907202, guid: 5db80a0f3caa05a4fb9518207c9ee4de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2584898726873932142, guid: 5db80a0f3caa05a4fb9518207c9ee4de, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -525,11 +518,6 @@ MonoBehaviour:
 --- !u!4 &1193724498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6899102507363625752, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-  m_PrefabInstance: {fileID: 6899102507568306499}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1193724499 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2134424195, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
   m_PrefabInstance: {fileID: 6899102507568306499}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1193724501 stripped
@@ -1109,7 +1097,7 @@ PrefabInstance:
     - target: {fileID: 938383649547915882, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
       propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 571374222}
+      objectReference: {fileID: 1193724501}
     - target: {fileID: 938383649547915882, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
       propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -1121,6 +1109,10 @@ PrefabInstance:
     - target: {fileID: 938383649547915882, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
       propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: IncreaseStorageHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 938383649547915882, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
+      propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerHealth, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 938383649547915882, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
       propertyPath: Interact.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -1136,7 +1128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9002872387587841265, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31c1aa3dee316f142b0b0fea6fe2a2fe, type: 3}
@@ -1162,6 +1154,10 @@ PrefabInstance:
     - target: {fileID: 1419281663604436965, guid: b79971ec2f15dbe4894f58ffbea90a46, type: 3}
       propertyPath: m_Name
       value: AmmoBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419281663604436965, guid: b79971ec2f15dbe4894f58ffbea90a46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2309702641191297673, guid: b79971ec2f15dbe4894f58ffbea90a46, type: 3}
       propertyPath: m_RootOrder
@@ -1216,14 +1212,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 141950168, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
+      propertyPath: dynamicCrosshair
+      value: 
+      objectReference: {fileID: 1455384167}
     - target: {fileID: 1052519930151359853, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
       propertyPath: bloodScreenEffect
       value: 
       objectReference: {fileID: 1052246284}
-    - target: {fileID: 1052519930151359853, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
-      propertyPath: healthAudioSource
-      value: 
-      objectReference: {fileID: 1193724499}
     - target: {fileID: 6720186958274598218, guid: f580373c8a1aa1e4ab2d8de3259cccdd, type: 3}
       propertyPath: dynamicCrosshair
       value: 
@@ -1321,6 +1317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'HelmetBox '
       objectReference: {fileID: 0}
+    - target: {fileID: 860919386577452268, guid: 115b7637ec785884a947acb75d9c3a80, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4057007593045963136, guid: 115b7637ec785884a947acb75d9c3a80, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1400,7 +1400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5240531865627504418, guid: a68129b9416db1940bc2f23c3d7c6b1a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7950781206563005229, guid: a68129b9416db1940bc2f23c3d7c6b1a, type: 3}
       propertyPath: m_RootOrder
@@ -1458,6 +1458,10 @@ PrefabInstance:
     - target: {fileID: 1041423082087158466, guid: 4eaf47ed7bbec4b4aa9c2cf7647acb30, type: 3}
       propertyPath: m_Name
       value: 'KevlarBox '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041423082087158466, guid: 4eaf47ed7bbec4b4aa9c2cf7647acb30, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4452964580180729774, guid: 4eaf47ed7bbec4b4aa9c2cf7647acb30, type: 3}
       propertyPath: m_RootOrder

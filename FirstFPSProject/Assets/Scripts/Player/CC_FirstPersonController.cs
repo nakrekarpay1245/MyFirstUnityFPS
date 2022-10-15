@@ -38,8 +38,6 @@ public class CC_FirstPersonController : MonoBehaviour
     [SerializeField]
     private KeyCode crouchKey = KeyCode.LeftControl;
     [SerializeField]
-    private KeyCode zoomKey = KeyCode.Mouse1;
-    [SerializeField]
     private KeyCode interactKey = KeyCode.E;
 
     [Header("Movement Paremeters")]
@@ -99,14 +97,6 @@ public class CC_FirstPersonController : MonoBehaviour
     private float crouchBobAmount = 0.025f;
     private float defaultYPosition = 0;
     private float timer;
-
-    [Header("Zoom Paremeters")]
-    [SerializeField]
-    private float timeToZoom = 0.3f;
-    [SerializeField]
-    private float zoomFOV = 30;
-    private float defaultFOV = 60;
-    private Coroutine zoomRoutine;
 
     [Header("Footstep Paremeters")]
     [SerializeField]
@@ -182,7 +172,6 @@ public class CC_FirstPersonController : MonoBehaviour
         playerCamera = GetComponentInChildren<Camera>();
         characterController = GetComponent<CharacterController>();
         defaultYPosition = playerCamera.transform.localPosition.y;
-        defaultFOV = playerCamera.fieldOfView;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -209,11 +198,6 @@ public class CC_FirstPersonController : MonoBehaviour
                 HandleHeadbob();
             }
 
-            if (canZoom)
-            {
-                HandleZoom();
-            }
-
             if (useFootsteps)
             {
                 HandleFootStep();
@@ -226,31 +210,6 @@ public class CC_FirstPersonController : MonoBehaviour
             }
 
             ApplyFinalMovements();
-        }
-    }
-
-    private void HandleZoom()
-    {
-        if (Input.GetKeyDown(zoomKey))
-        {
-            if (zoomRoutine != null)
-            {
-                StopCoroutine(zoomRoutine);
-                zoomRoutine = null;
-            }
-
-            zoomRoutine = StartCoroutine(ToggleZoom(true));
-        }
-
-        if (Input.GetKeyUp(zoomKey))
-        {
-            if (zoomRoutine != null)
-            {
-                StopCoroutine(zoomRoutine);
-                zoomRoutine = null;
-            }
-
-            zoomRoutine = StartCoroutine(ToggleZoom(false));
         }
     }
 
@@ -428,21 +387,4 @@ public class CC_FirstPersonController : MonoBehaviour
 
         duringCrouchAnimation = false;
     }
-
-    private IEnumerator ToggleZoom(bool isEnter)
-    {
-        float targetFOV = isEnter ? zoomFOV : defaultFOV;
-        float startingFOV = playerCamera.fieldOfView;
-        float timeElapsed = 0;
-
-        while (timeElapsed < timeToZoom)
-        {
-            playerCamera.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapsed / timeToZoom);
-            timeElapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        playerCamera.fieldOfView = targetFOV;
-        zoomRoutine = null;
-    }   
 }
