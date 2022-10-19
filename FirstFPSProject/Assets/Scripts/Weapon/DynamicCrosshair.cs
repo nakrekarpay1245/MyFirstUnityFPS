@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class DynamicCrosshair : MonoBehaviour
 {
-    //[SerializeField]
-    //private Image crosshair; 
-
     [SerializeField]
     private RectTransform crosshair;
 
@@ -17,8 +14,14 @@ public class DynamicCrosshair : MonoBehaviour
 
     private Vector2 currentSize = new Vector2(100, 100);
 
+    public static DynamicCrosshair instance;
+
     private void Awake()
     {
+        if (!instance)
+        {
+            instance = this;
+        }
         currentSize = crosshair.sizeDelta;
     }
 

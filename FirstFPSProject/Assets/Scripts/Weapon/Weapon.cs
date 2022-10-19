@@ -52,8 +52,14 @@ public class Weapon : MonoBehaviour
     private AudioClip weaponMagazineClip;
 
     private bool isReloading;
+
+    public static Weapon instance;
     private void Awake()
     {
+        if (!instance)
+        {
+            instance = this;
+        }
         camera = Camera.main;
         muzzleFlash = GetComponentInChildren<ParticleSystem>();
         weaponAnimator = GetComponentInChildren<Animator>();

@@ -23,8 +23,6 @@ public class WeaponZoom : MonoBehaviour
     [Header("References")]
     [SerializeField]
     private Camera camera;
-    [SerializeField]
-    private DynamicCrosshair dynamicCrosshair;
 
     private void Awake()
     {
@@ -84,7 +82,7 @@ public class WeaponZoom : MonoBehaviour
 
         camera.fieldOfView = targetFOV;
         transform.localPosition = targetPosition;
-        dynamicCrosshair.Zoom(isEnter);
+        DynamicCrosshair.instance.Zoom(isEnter);
         zoomRoutine = null;
     }
 }

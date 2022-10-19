@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 101132519060584715}
   - component: {fileID: 9081212518075120176}
   - component: {fileID: 3090059784647644764}
-  - component: {fileID: 1747630549205935497}
   - component: {fileID: 1747630549205935496}
+  - component: {fileID: 4592308336829617960}
   m_Layer: 9
   m_Name: 'HelmetBox '
   m_TagString: Interactable/AmmoBox
@@ -101,111 +101,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.75, z: 0.6}
   m_Center: {x: 0, y: -0.15, z: -0.05}
---- !u!114 &1747630549205935497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860919386577452268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b193a2caffd31459eddb03fc34facb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Focus:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: DisplayInteractText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Ammo (120)
-          m_BoolArgument: 0
-        m_CallState: 2
-  Interact:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Weapon, Assembly-CSharp
-        m_MethodName: GetAmmo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 120
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3090059784647644764}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1747630549205935496}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  LoseFocus:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: HideInteractText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!82 &1747630549205935496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302,6 +197,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4592308336829617960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860919386577452268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb3cdfda922f964291cee5bae528bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Focus:
+    m_PersistentCalls:
+      m_Calls: []
+  Interact:
+    m_PersistentCalls:
+      m_Calls: []
+  LoseFocus:
+    m_PersistentCalls:
+      m_Calls: []
+  description: Helmet (+50 Armor)
+  model: {fileID: 9059046860410723249}
+  particle: {fileID: 5335158185053587277}
+  armor: 50
 --- !u!1001 &5779193609692430667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,6 +284,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2792287036830810176, guid: 70ecd212b81a15f439a0c3156b29cef8, type: 3}
   m_PrefabInstance: {fileID: 5779193609692430667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9059046860410723249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3281966242072287994, guid: 70ecd212b81a15f439a0c3156b29cef8, type: 3}
+  m_PrefabInstance: {fileID: 5779193609692430667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6711363796204587351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,5 +349,10 @@ PrefabInstance:
 --- !u!4 &5335158185053587267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669084808649772564, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
+  m_PrefabInstance: {fileID: 6711363796204587351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5335158185053587277 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1669084808649772570, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
   m_PrefabInstance: {fileID: 6711363796204587351}
   m_PrefabAsset: {fileID: 0}

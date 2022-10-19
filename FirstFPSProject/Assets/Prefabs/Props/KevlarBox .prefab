@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 353024759255537445}
   - component: {fileID: 8901237067807331358}
   - component: {fileID: 3414678877763811442}
-  - component: {fileID: 2144186082865630119}
   - component: {fileID: 2144186082865630118}
+  - component: {fileID: 4312661440055776425}
   m_Layer: 9
   m_Name: 'KevlarBox '
   m_TagString: Interactable/AmmoBox
@@ -33,8 +33,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5731731310748346733}
   - {fileID: 1707008046684583342}
+  - {fileID: 5731731310748346733}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -101,111 +101,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.75, z: 0.6}
   m_Center: {x: 0, y: -0.15, z: -0.05}
---- !u!114 &2144186082865630119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041423082087158466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b193a2caffd31459eddb03fc34facb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Focus:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: DisplayInteractText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Ammo (120)
-          m_BoolArgument: 0
-        m_CallState: 2
-  Interact:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Weapon, Assembly-CSharp
-        m_MethodName: GetAmmo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 120
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3414678877763811442}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2144186082865630118}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  LoseFocus:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: HideInteractText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!82 &2144186082865630118
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302,6 +197,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4312661440055776425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041423082087158466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb3cdfda922f964291cee5bae528bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Focus:
+    m_PersistentCalls:
+      m_Calls: []
+  Interact:
+    m_PersistentCalls:
+      m_Calls: []
+  LoseFocus:
+    m_PersistentCalls:
+      m_Calls: []
+  description: Kevlar (+50 Armor)
+  model: {fileID: 2088353470153125652}
+  particle: {fileID: 5731731310748346723}
+  armor: 50
 --- !u!1001 &3562541378554869230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,7 +231,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2792287036830810176, guid: 27bd0f58a1b4fbe4db0ac610d6626193, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2792287036830810176, guid: 27bd0f58a1b4fbe4db0ac610d6626193, type: 3}
       propertyPath: m_LocalPosition.x
@@ -364,6 +284,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2792287036830810176, guid: 27bd0f58a1b4fbe4db0ac610d6626193, type: 3}
   m_PrefabInstance: {fileID: 3562541378554869230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2088353470153125652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3281966242072287994, guid: 27bd0f58a1b4fbe4db0ac610d6626193, type: 3}
+  m_PrefabInstance: {fileID: 3562541378554869230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6386936086965364601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373,7 +298,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1669084808649772564, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1669084808649772564, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,6 +346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
+--- !u!198 &5731731310748346723 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1669084808649772570, guid: b55b426dcf72298489994a237ab71fbb, type: 3}
+  m_PrefabInstance: {fileID: 6386936086965364601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5731731310748346733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669084808649772564, guid: b55b426dcf72298489994a237ab71fbb, type: 3}

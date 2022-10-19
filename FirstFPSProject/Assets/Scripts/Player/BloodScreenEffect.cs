@@ -14,29 +14,40 @@ public class BloodScreenEffect : MonoBehaviour
     [SerializeField]
     private CanvasGroup[] bloodScreens;
 
+    public static BloodScreenEffect instance;
+
+    private void OnEnable()
+    {
+        PlayerHealth.OnDamage += BloodEffect;
+        PlayerHealth.OnHeal += BloodEffect;
+    }
+    private void OnDisable()
+    {
+        PlayerHealth.OnDamage -= BloodEffect;
+        PlayerHealth.OnHeal -= BloodEffect;
+    }
+
     private void Awake()
     {
+        if (!instance)
+        {
+            instance = this;
+        }
+
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void BloodEffect()
+    public void BloodEffect(float value)
     {
-        StartCoroutine(BloodScreenActive());
+        BloodScreenActive(1 - (value / 100));
         BloodSoundsPlay();
     }
 
-    private IEnumerator BloodScreenActive()
+    private void BloodScreenActive(float value)
     {
         for (int i = 0; i < bloodScreens.Length; i++)
         {
-            bloodScreens[i].DOFade(0.75f, 1);
-        }
-
-        yield return new WaitForSeconds(1);
-
-        for (int i = 0; i < bloodScreens.Length; i++)
-        {
-            bloodScreens[i].DOFade(0, 14);
+            bloodScreens[i].DOFade(value, 1);
         }
     }
 

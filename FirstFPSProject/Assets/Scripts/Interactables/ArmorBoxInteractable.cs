@@ -1,18 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class ArmorBoxInteractable : MonoBehaviour
+public class ArmorBoxInteractable : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private float armor;
+    public override void OnFocus()
     {
-        
+        Focus.Invoke();
+        UI.instance.DisplayInteractText(description);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnInteract()
     {
-        
+        Interact.Invoke();
+        Destroy(gameObject, 1);
+        collider.enabled = false;
+        model.SetActive(false);
+        particle.gameObject.SetActive(false);
+        audioSource.Play();
+        PlayerHealth.instance.IncreaseArmor(armor);
+        OnLoseFocus();
+    }
+
+    public override void OnLoseFocus()
+    {
+        LoseFocus.Invoke();
+        UI.instance.HideInteractText();
     }
 }

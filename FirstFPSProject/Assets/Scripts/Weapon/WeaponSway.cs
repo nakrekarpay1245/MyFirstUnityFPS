@@ -17,7 +17,6 @@ public class WeaponSway : MonoBehaviour
     private Quaternion rotationY;
     private Quaternion targetRotation;
 
-
     private void Update()
     {
         mouseX = Input.GetAxis("Mouse X") * swayMultiplier;

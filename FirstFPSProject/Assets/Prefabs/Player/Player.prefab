@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052408872}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.000833, z: 0.000484}
+  m_LocalPosition: {x: 0, y: -0.00085, z: 0.00048}
   m_LocalScale: {x: 0.003333333, y: 0.0033333325, z: 0.0033333327}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -881,7 +881,6 @@ MonoBehaviour:
   zoomFOV: 30
   zoomPosition: {x: 0, y: -0.235, z: -0.2}
   camera: {fileID: 0}
-  dynamicCrosshair: {fileID: 0}
 --- !u!1 &6899102506651268146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,10 +1153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  timeBeforeRegenStart: 3
-  healthValueIncrement: 1
-  healthTimeIncrement: 0.1
-  storageHealth: 0
+  maxArmor: 100
+  currentArmor: 0
   healthAudioSource: {fileID: 2134424195}
   bloodScreenEffect: {fileID: 0}
 --- !u!82 &487592172

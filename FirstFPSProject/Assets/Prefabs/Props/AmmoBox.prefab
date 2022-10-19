@@ -115,97 +115,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Focus:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: DisplayInteractText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Ammo (120)
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   Interact:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Weapon, Assembly-CSharp
-        m_MethodName: GetAmmo
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 120
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3648704843595941205}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1472883337126347514}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1755839177990146395}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 241596033}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   LoseFocus:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: HideInteractText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  description: Ammo (120)
+  model: {fileID: 1472883337126347514}
+  particle: {fileID: 1755839177990146388}
+  ammoCount: 120
 --- !u!82 &241596033
 AudioSource:
   m_ObjectHideFlags: 0
@@ -359,14 +279,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 102a4a91674746c4f9b592cc9a422a06, type: 3}
+--- !u!198 &1755839177990146388 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1669084808649772570, guid: 102a4a91674746c4f9b592cc9a422a06, type: 3}
+  m_PrefabInstance: {fileID: 1113578400397854542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1755839177990146394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669084808649772564, guid: 102a4a91674746c4f9b592cc9a422a06, type: 3}
-  m_PrefabInstance: {fileID: 1113578400397854542}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1755839177990146395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1669084808649772565, guid: 102a4a91674746c4f9b592cc9a422a06, type: 3}
   m_PrefabInstance: {fileID: 1113578400397854542}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4178031485582366720
